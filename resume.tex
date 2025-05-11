@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Anirudh Attanti} \\ \vspace{0.2cm}
+    \normalsize
+    +91-7013241797 \enspace $|$ \enspace
+    \href{mailto:attantianirudh123@gmail.com}{\underline{attantianirudh123@gmail.com}} \enspace $|$ \enspace
+    \href{https://www.linkedin.com/in/attanti-anirudh-988b8b157/}{\underline{LinkedIn}} \enspace $|$ \enspace
+    \href{https://github.com/ANlRUDH}{\underline{GitHub}}
+\end{center}
+
+
+\begin{document}
+
+%----------SUMMARY HEADING----------
+\section*{Summary}
+\begin{center}
+    Java Backend Developer with 1 year of experience in building RESTful APIs using Spring Boot, JPA, and MySQL. Hands-on with Redis, JWT, and Kafka for building scalable and secure backend systems.
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Manipal Institute of Technology, Manipal}{Graduated: 2022}
+      {Bachelor of Technology in Computer Science and Engineering}{GATE CSE Rank: 949}
+\resumeSubHeadingListEnd
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Engineer}{Aug 2022 -- Aug 2023}
+  {\textbf{\scshape \large CGI}}{Bangalore, Hyderabad}
+
+  % Internal License Management Tool
+  \resumeItem{\textbf{Internal License Management Tool} (Spring Boot, JPA/Hibernate, MySQL, React)}
+  \resumeItemListStart
+    \resumeItem{Worked on backend services managing \textbf{1000+ software licenses}, supporting procurement and renewal.}
+    \resumeItem{Worked on migrating legacy license management features to modular REST APIs using Spring Boot and JPA.}
+    \resumeItem{Integrated Redis caching to improve response time for frequently accessed license metadata.}
+    \resumeItem{Enhanced authentication flow by adding OTP-based MFA using Redis and Spring Security.}
+    \resumeItem{Contributed to building approval workflow logic and added automated email triggers for purchase requests.}
+    \resumeItem{Optimized slow SQL queries during system migration, reducing DB call time by 20\% for license summary reports.}
+  \resumeItemListEnd
+  \vspace{4pt}  % Space between projects
+
+  \resumeItem{\textbf{Internal Budget and Vendor Request System} (Spring Boot, MySQL, React)}
+\resumeItemListStart
+  \resumeItem{Contributed to migrating budget request workflows from legacy code to Spring Boot-based RESTful services.}
+  \resumeItem{Wrote and refactored JPA queries to improve performance for approval and vendor modules.}
+  \resumeItem{Implemented backend validations and role-based access control for budget requests.}
+  \resumeItem{Worked on minor UI improvements using React, such as form validation and state handling.}
+  \resumeItem{Added Log4j-based request logging for debugging and traceability in production.}
+\resumeItemListEnd
+
+
+  \vspace{4pt}  % Space between projects
+
+
+  % Virgin Plus Canada
+  \resumeItem{\textbf{Virgin Plus Canada (Testing, Accessibility)}}
+\resumeItemListStart
+  \resumeItem{Worked with the accessibility team to identify and resolve over 100 WCAG compliance issues.}
+  \resumeItem{Wrote and executed cross-browser and cross-device test cases to ensure UI consistency.}
+  \resumeItem{Created ER diagrams and documented test scenarios for QA handoffs and audits.}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+      
+\resumeProjectHeading
+{\textbf{DNA Sequence Search Engine} $|$ \emph{Spring Boot, PostgreSQL, Java, Spring Security, Multi-threading}}{}
+\resumeItemListStart
+\resumeItem{Developed a system for storing and matching DNA patterns using hashing and similarity-based search.}
+\resumeItem{Implemented secure data handling, role-based authentication, and optimized search with indexing and threading.}
+\resumeItem{Designed a multi-threaded matching algorithm, improving DNA matching speed by 3x on large datasets.}
+\resumeItemListEnd
+
+    
+\resumeSubHeadingListEnd
+
+%Skills
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
+    \small{
+        \item \textbf{Programming Languages}: Java, JavaScript, C++, Python, HTML, CSS  
+        \item \textbf{Frameworks \& Libraries}: Spring Boot (Security, Web, Data JPA), React, Redux, Docker, JUnit, Mockito
+        \item \textbf{Databases \& Caching}: MySQL, PostgreSQL, Redis (Caching, Rate Limiting), MongoDB
+        \item \textbf{Tools \& DevOps}: Git, Postman, Maven, IntelliJ, VS Code, Debugging
+        \item \textbf{Core CS Concepts}: OOP, DSA, Multithreading, Operating Systems, Computer Networks, Linux, Windows
+    }
+\end{itemize}
+
+
+
+%Achievements
+\section{Achievements}
+\resumeSubHeadingListStart
+    \resumeItem{GATE CSE Rank: 949 (2022)}
+    \resumeItem{Solved 500+ DSA problems on LeetCode and HackerRank}
+    \resumeItem{Online Chess Rating: 2000+. Regularly compete on Chess.com and Lichess}
+    
+
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
